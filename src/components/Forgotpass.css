@@ -1,0 +1,83 @@
+.auth-form,
+.forgotpass-form {
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat, linear-gradient(135deg, rgba(123, 0, 255, 0.1), rgba(123, 0, 255, 0.1)); 
+  max-width: 450px;
+  margin: 20px;
+  border-radius: 12px;
+  padding: 50px;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border: 1.5px solid #eee;
+  /* Optional: add a semi-transparent overlay for readability */
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: overlay;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-form::before,
+.forgotpass-form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.forgotpass-form h2,
+.auth-form h2 {
+  margin-bottom: 10px;
+  color: #ff8357;
+}
+
+.auth-desc {
+  margin-bottom: 22px;
+  color: #888;
+  font-size: 15px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.auth-btn {
+  padding: 10px 25px;
+  background-color: #7b00ff;
+  color: #fff;
+  border: 2px solid #7b00ff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.auth-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.auth-btn:hover {
+  background-color: #9400ff;
+  color: #fff;
+  border-color: #9400ff;
+  font-weight: bold;
+}
+
+.auth-message {
+  margin-top: 20px;
+  color: black;
+  font-weight: bold;
+  background: #fff6f2;
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
