@@ -1,0 +1,138 @@
+.contact-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+  background-size: cover;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+}
+
+.contact-hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.contact-hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.contact-form {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(16px);
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(123, 0, 255, 0.18);
+  color: #fff;
+}
+
+.contact-form h2 {
+  margin-bottom: 8px;
+  color: black;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(123, 0, 255, 0.3);
+  font-size: 1em;
+  background: rgba(26, 26, 46, 0.4);
+  color: #fff;
+}
+
+.contact-form button {
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, #7B00FF 0%, #1565c0 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(123, 0, 255, 0.3);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(123, 0, 255, 0.4);
+  background: linear-gradient(135deg, #8f1fff 0%, #1976d2 100%);
+}
+
+.contact-form button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(123, 0, 255, 0.2);
+}
+
+.contact-success {
+  color: #198fcf;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-info {
+  flex: 1 1 260px;
+  background: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(16px);
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(123, 0, 255, 0.18);
+  color: #fff;
+}
+
+.contact-info h2 {
+  color: black;
+  margin-bottom: 8px;
+}
+
+.contact-info h3 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.contact-info p {
+  margin: 4px 0;
+  color: snow;
+} 
+
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.contact-socials a {
+  color: #198fcf;
+  text-decoration: none;
+  font-size: 1.08em;
+  transition: color 0.2s;
+}
+
+.contact-socials a:hover {
+  color: #156fa1;
+  text-decoration: underline;
+}
+
+.contact-map {
+  margin-top: 10px;
+}
