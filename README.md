@@ -19,6 +19,37 @@ TechBlogger is a modern, full-stack blogging platform designed for tech enthusia
 - **Database**: SQLite (default, can be swapped for MySQL/PostgreSQL)
 - **Styling**: Custom CSS
 
+## 🧩 Architecture Overview
+
+### Front-End (React)
+The front-end is built with React.js, providing a dynamic and responsive user interface. It features:
+- **User Dashboard**: Allows users to manage posts, view analytics, and update their profile.
+- **Admin Panel**: Enables admins to manage users, admins, reports, and platform settings.
+- **API Key Management**: Both users and admins can view, copy, and regenerate their API keys from the settings tab.
+- **Charts & Analytics**: Uses Chart.js for visualizing data and statistics.
+- **Custom Styling**: All UI components are styled with custom CSS for a modern look.
+
+The React app communicates with the backend via RESTful API calls (using `fetch`).
+
+### Back-End (Flask)
+The backend is powered by Flask (Python), exposing RESTful API endpoints for all core functionalities:
+- **Authentication**: Handles login and role-based access (user/admin).
+- **User & Admin Management**: CRUD operations for users and admins.
+- **Post Management**: Endpoints for creating, editing, and retrieving blog posts.
+- **API Key Endpoints**: Secure endpoints for generating, retrieving, and updating API keys for both users and admins.
+- **CORS Enabled**: Uses `flask-cors` to allow cross-origin requests from the React frontend.
+
+The backend validates API keys for protected endpoints, ensuring secure access.
+
+### Database (SQLite)
+The default database is SQLite, a lightweight file-based database ideal for development and small deployments. It stores:
+- **Users**: User credentials, profile info, and API keys.
+- **Admins**: Admin credentials, roles, and API keys.
+- **Posts**: Blog post content, metadata, and author info.
+- **Reports/Analytics**: Data for generating charts and statistics.
+
+You can easily swap SQLite for MySQL or PostgreSQL by updating the backend configuration and models.
+
 ## 🚀 Getting Started
 
 ### Prerequisites
