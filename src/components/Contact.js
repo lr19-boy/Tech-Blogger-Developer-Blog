@@ -58,7 +58,7 @@ function Contact() {
           <h2>Our Info</h2>
           <p>
             <strong>Emails:</strong><br />
-            lazarusrolando618@gmail.com<br />
+            lazarusrolando399@gmail.com<br />
             <strong>Owners:</strong><br />
             Lazarus Rolando<br /><br />
             <strong>Phone:</strong> +1 234 567 8901<br />
