@@ -6,17 +6,20 @@ TechBlogger is a modern, full-stack blogging platform designed for tech enthusia
 
 - **User Dashboard**: Personalized dashboard for users to manage their posts, view analytics, and update their profile.
 - **Admin Panel**: Powerful admin interface for managing users, admins, reports, and platform settings.
-- **API Key System**: Both users and admins can generate, view, and use API keys for secure API access.
+- **Role-Based Access Control**: Secure, protected routes for users and admins, with visual alerts and auto-redirects for unauthorized access.
+- **Pricing & Subscription Tiers**: Multiple plans (Basic, Starter, Professional, Enterprise) with feature comparison and modern pricing UI.
+- **API Key System**: Both users and admins can generate, view, and use API keys for secure API access, with copy/regenerate functionality and usage code snippets.
 - **Authentication**: Secure login system with role-based access control (user/admin).
 - **Post Management**: Create, edit, and delete blog posts. Users see their own posts; admins can manage all users.
 - **Analytics**: Visual charts and stats for both users and admins.
 - **Profile Customization**: Upload avatars, update bio, and manage account settings.
+- **Modern UI/UX**: Animated stats, feature cards, and improved CSS for a beautiful, responsive experience.
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React.js (with Chart.js for analytics)
+- **Frontend**: React.js (with Chart.js, Recharts for analytics, Lucide React for icons)
 - **Backend**: Flask (Python) with RESTful API endpoints
-- **Database**: SQLite (default, can be swapped for MySQL/PostgreSQL)
+- **Database**: SQLite (default, can be swapped for MySQL)
 - **Styling**: Custom CSS
 
 ## 🧩 Architecture Overview
@@ -72,21 +75,58 @@ npm install
 ```bash
 cd src/components
 pip install flask flask-cors
+# Or, if requirements.txt is present:
+# pip install -r requirements.txt
 ```
 
 ### 4. Run the Backend
 ```bash
 python app.py
 # or the relevant backend file
+# Backend runs on http://localhost:5000 by default
 ```
 
 ### 5. Run the Frontend
 ```bash
 cd ../..
 npm start
+# Frontend runs on http://localhost:3000 by default
+```
+
+### 6. Build for Production
+```bash
+npm run build
+```
+
+### 7. Run Tests
+```bash
+npm test
 ```
 
 The app will be available at [http://localhost:3000](http://localhost:3000).
+
+## 🏷️ Pricing & Subscription Tiers
+
+TechBlogger now offers multiple subscription plans:
+- **Basic**: Free access to public blog posts, community forum, newsletter, and analytics.
+- **Starter**: Adds web development consultation, more posts per month, and email support.
+- **Professional**: Advanced web development, priority support, 1-on-1 calls, and custom project planning.
+- **Enterprise**: Full-scale solutions, unlimited posts, dedicated support, and priority features.
+
+Compare features and choose a plan in the **Services** section of the app.
+
+## 🛡️ Role-Based Access Control
+
+- **Protected Routes**: Only users with the correct role can access user/admin dashboards.
+- **Visual Alerts**: Unauthorized access triggers animated alerts and auto-redirects.
+- **Manual Redirect**: "Go Now" button for immediate navigation.
+- **Security**: All role checks are validated on both frontend and backend.
+
+## 🏠 Enhanced Home & Community Features
+
+- **Animated Stats**: See live stats for readers, articles, authors, and views.
+- **Featured Articles**: Curated list of trending and new articles.
+- **Community Support**: Connect with developers worldwide.
 
 ## 🏗️ Code Structure
 
