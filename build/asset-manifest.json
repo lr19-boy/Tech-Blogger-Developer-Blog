@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b81a1d95.css",
+    "main.js": "/static/js/main.062a6f9f.js",
+    "static/js/453.cddcc6b9.chunk.js": "/static/js/453.cddcc6b9.chunk.js",
+    "static/media/techblogger.png": "/static/media/techblogger.0729b964e11e3f403a18.png",
+    "index.html": "/index.html",
+    "main.b81a1d95.css.map": "/static/css/main.b81a1d95.css.map",
+    "main.062a6f9f.js.map": "/static/js/main.062a6f9f.js.map",
+    "453.cddcc6b9.chunk.js.map": "/static/js/453.cddcc6b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b81a1d95.css",
+    "static/js/main.062a6f9f.js"
+  ]
+}
