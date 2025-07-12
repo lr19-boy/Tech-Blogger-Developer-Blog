@@ -1,0 +1,28 @@
+import requests
+import time
+
+def test_endpoint():
+    url = "http://localhost:5000/api/followers/count/lr19"
+    
+    print(f"Testing endpoint: {url}")
+    
+    try:
+        # Test with a timeout
+        response = requests.get(url, timeout=10)
+        print(f"Status Code: {response.status_code}")
+        print(f"Response: {response.text}")
+        
+        if response.status_code == 200:
+            print("✅ Endpoint working correctly!")
+        else:
+            print("❌ Endpoint returned error status")
+            
+    except requests.exceptions.Timeout:
+        print("❌ Request timed out - server might be hanging")
+    except requests.exceptions.ConnectionError:
+        print("❌ Connection error - server might not be running")
+    except Exception as e:
+        print(f"❌ Error: {e}")
+
+if __name__ == "__main__":
+    test_endpoint() 
